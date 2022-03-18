@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="25dp"
+        android:layout_margin="10dp"
+        app:cardElevation="50dp"
+        android:backgroundTint="@color/white">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Estación en tierra Emisora"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Potencia de salida amlificador"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Pérdidas entre Ampli. y antena"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Ganancia Máxima Antena"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Latitud"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Longitud"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Frecuencia de transmisión"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Con lluvia"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Satélite GEO (Enlace de subida)"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Factor del ruido RX"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Pérdidas entre antena y RX"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Theta 3dB de Antena"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Ganancia Máxima Antena"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Desapuntamiento de la Antena"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Longitud"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="TA a entrada de RX"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="100dp"
+                android:layout_height="16dp"
+                android:background="#c3c3c3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView3"
+                app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="100dp"
+                android:layout_height="16dp"
+                android:layout_margin="5dp"
+                android:background="#c3c3c3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView4"
+                app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="100dp"
+                android:layout_height="16dp"
+                android:layout_margin="5dp"
+                android:background="#c3c3c3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView6"
+                app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+            <EditText
+                android:id="@+id/degreeLUp"
+                android:layout_width="100dp"
+                android:layout_height="16dp"
+                android:layout_margin="5dp"
+                android:background="#c3c3c3"
+                app:layout_constraintStart_toEndOf="@+id/textView7"
+                app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+            <EditText
+                android:id="@+id/minuteLUp"
+                android:layout_width="100dp"
+                android:layout_height="16dp"
+                android:layout_margin="5dp"
+                android:background="#c3c3c3"
+                android:inputType="numberDecimal"
+                app:layout_constraintStart_toEndOf="@+id/degreeLUp"
+                app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+            <EditText
+                android:id="@+id/directionLUp"
+                android:layout_width="100dp"
+                android:layout_height="16dp"
+                android:layout_margin="5dp"
+                android:background="#c3c3c3"
+                app:layout_constraintStart_toEndOf="@+id/minuteLUp"
+                app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+            <EditText
+                android:id="@+id/minuteLongUp"
+                android:layout_width="100dp"
+                android:layout_height="16dp"
+                android:layout_margin="5dp"
+                android:background="#c3c3c3"
+                android:inputType="numberDecimal"
+                app:layout_constraintStart_toEndOf="@+id/degreeLongUp"
+                app:layout_constraintTop_toBottomOf="@+id/minuteLUp" />
+
+            <EditText
+                android:id="@+id/directionLongUp"
+                android:layout_width="100dp"
+                android:layout_height="16dp"
+                android:layout_margin="5dp"
+                android:background="#c3c3c3"
+                app:layout_constraintStart_toEndOf="@+id/minuteLongUp"
+                app:layout_constraintTop_toBottomOf="@+id/directionLUp" />
+
+            <EditText
+                android:id="@+id/degreeLongUp"
+                android:layout_width="100dp"
+                android:layout_height="16dp"
+                android:layout_margin="5dp"
+                android:background="#c3c3c3"
+                android:inputType="numberDecimal"
+                app:layout_constraintStart_toEndOf="@+id/textView8"
+                app:layout_constraintTop_toBottomOf="@+id/degreeLUp" />
+
+            <EditText
+                android:id="@+id/frequencyUp"
+                android:layout_width="100dp"
+                android:layout_height="16dp"
+                android:layout_margin="5dp"
+                android:inputType="numberDecimal"
+                android:background="#c3c3c3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView9"
+                app:layout_constraintTop_toBottomOf="@+id/degreeLongUp" />
+
+            <EditText
+                android:layout_width="100dp"
+                android:layout_height="16dp"
+                android:layout_margin="5dp"
+                android:background="#c3c3c3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView10"
+                app:layout_constraintTop_toBottomOf="@+id/frequencyUp" />
+
+            <Button
+                android:id="@+id/calculateUpButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:layout_margin="10dp"
+                android:text="Calcular"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+            <EditText
+                android:id="@+id/editText7"
+                android:layout_width="100dp"
+                android:layout_height="16dp"
+                android:layout_margin="5dp"
+                android:background="#c3c3c3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView12"
+                app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+            <EditText
+                android:id="@+id/editText8"
+                android:layout_width="100dp"
+                android:layout_height="16dp"
+                android:layout_margin="5dp"
+                android:background="#c3c3c3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView13"
+                app:layout_constraintTop_toBottomOf="@+id/editText7" />
+
+            <EditText
+                android:id="@+id/editText9"
+                android:layout_width="100dp"
+                android:layout_height="16dp"
+                android:layout_margin="5dp"
+                android:background="#c3c3c3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView14"
+                app:layout_constraintTop_toBottomOf="@+id/editText8" />
+
+            <EditText
+                android:id="@+id/editText10"
+                android:layout_width="100dp"
+                android:layout_height="16dp"
+                android:layout_margin="5dp"
+                android:background="#c3c3c3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView15"
+                app:layout_constraintTop_toBottomOf="@+id/editText9" />
+
+            <EditText
+                android:id="@+id/editText11"
+                android:layout_width="100dp"
+                android:layout_height="16dp"
+                android:layout_margin="5dp"
+                android:background="#c3c3c3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView16"
+                app:layout_constraintTop_toBottomOf="@+id/editText10" />
+
+            <EditText
+                android:id="@+id/longSatUp"
+                android:layout_width="100dp"
+                android:layout_height="16dp"
+                android:layout_margin="5dp"
+                android:background="#c3c3c3"
+                android:inputType="numberDecimal"
+                app:layout_constraintStart_toEndOf="@+id/textView17"
+                app:layout_constraintTop_toBottomOf="@+id/editText11" />
+
+            <EditText
+                android:id="@+id/directionLongSatUp"
+                android:layout_width="100dp"
+                android:layout_height="16dp"
+                android:layout_margin="5dp"
+                android:background="#c3c3c3"
+                app:layout_constraintStart_toEndOf="@+id/longSatUp"
+                app:layout_constraintTop_toBottomOf="@+id/editText11" />
+
+            <EditText
+                android:layout_width="100dp"
+                android:layout_height="16dp"
+                android:layout_margin="5dp"
+                android:background="#c3c3c3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView18"
+                app:layout_constraintTop_toBottomOf="@+id/longSatUp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/resultUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/calculateUpButton">
+
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Resultados"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Ángulo de elevación"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="italic"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Distancia hasta el satételite"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="italic"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Pérdidas por propagación"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="italic"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Pérdidas por Absorción"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="italic"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="PIRE"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="italic"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Pérdidas totales en subida"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="italic"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Pérdidas por desapuntamiento"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="italic"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Temperatura del ruido al ABR"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="italic"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Factor de calidad del satélite"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="italic"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Cociente de potencias"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="italic"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+                <EditText
+                    android:id="@+id/degreeElevationUp"
+                    android:layout_width="100dp"
+                    android:layout_height="16dp"
+                    android:layout_margin="5dp"
+                    android:background="#c3c3c3"
+                    android:editable="false"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView20"
+                    app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+                <EditText
+                    android:id="@+id/distanceUp"
+                    android:layout_width="100dp"
+                    android:layout_height="16dp"
+                    android:layout_margin="5dp"
+                    android:background="#c3c3c3"
+                    android:editable="false"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView21"
+                    app:layout_constraintTop_toBottomOf="@+id/degreeElevationUp" />
+
+                <EditText
+                    android:id="@+id/propagationUp"
+                    android:layout_width="100dp"
+                    android:layout_height="16dp"
+                    android:layout_margin="5dp"
+                    android:background="#c3c3c3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView22"
+                    app:layout_constraintTop_toBottomOf="@+id/distanceUp" />
+
+                <EditText
+                    android:id="@+id/editText16"
+                    android:layout_width="100dp"
+                    android:layout_height="16dp"
+                    android:layout_margin="5dp"
+                    android:background="#c3c3c3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView23"
+                    app:layout_constraintTop_toBottomOf="@+id/propagationUp" />
+
+                <EditText
+                    android:id="@+id/editText17"
+                    android:layout_width="100dp"
+                    android:layout_height="16dp"
+                    android:layout_margin="5dp"
+                    android:background="#c3c3c3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView24"
+                    app:layout_constraintTop_toBottomOf="@+id/editText16" />
+
+                <EditText
+                    android:id="@+id/editText18"
+                    android:layout_width="100dp"
+                    android:layout_height="16dp"
+                    android:layout_margin="5dp"
+                    android:background="#c3c3c3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView25"
+                    app:layout_constraintTop_toBottomOf="@+id/editText17" />
+
+                <EditText
+                    android:id="@+id/editText19"
+                    android:layout_width="100dp"
+                    android:layout_height="16dp"
+                    android:layout_margin="5dp"
+                    android:background="#c3c3c3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView26"
+                    app:layout_constraintTop_toBottomOf="@+id/editText18" />
+
+                <EditText
+                    android:id="@+id/editText20"
+                    android:layout_width="100dp"
+                    android:layout_height="16dp"
+                    android:layout_margin="5dp"
+                    android:background="#c3c3c3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView27"
+                    app:layout_constraintTop_toBottomOf="@+id/editText19" />
+
+                <EditText
+                    android:id="@+id/editText21"
+                    android:layout_width="100dp"
+                    android:layout_height="16dp"
+                    android:layout_margin="5dp"
+                    android:background="#c3c3c3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView28"
+                    app:layout_constraintTop_toBottomOf="@+id/editText20" />
+
+                <EditText
+                    android:layout_width="100dp"
+                    android:layout_height="16dp"
+                    android:layout_margin="5dp"
+                    android:background="#c3c3c3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView29"
+                    app:layout_constraintTop_toBottomOf="@+id/editText21" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:id="@+id/returnUpButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:text="Regresar"
+                android:layout_marginStart="90dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/restartUpButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:layout_marginStart="10dp"
+                android:text="Reiniciar"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/returnUpButton" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
